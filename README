@@ -1,4 +1,4 @@
-Basic Setup for Simple Web Projects
+basic setup for a web page
 
 npm install http-server -g
 http-server public
