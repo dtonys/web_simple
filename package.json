@@ -1,0 +1,45 @@
+{
+  "name": "web_simple",
+  "version": "1.0.0",
+  "description": "Foundation for framework free web project, using simple tools.",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "compression": "^1.6.0",
+    "consolidate": "^0.13.1",
+    "cookie-parser": "^1.4.0",
+    "ejs": "^2.3.4",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "forever": "^0.15.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-jsvalidate": "^0.2.2",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "nodemon": "^1.8.1",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-jst": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtonys/web_simple.git"
+  },
+  "author": "Tony Schwartz <dtonys@gmail.com> (http://www.dtonyschwartz.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtonys/web_simple/issues"
+  },
+  "homepage": "https://github.com/dtonys/web_simple#readme",
+  "scripts": {
+    "start": "nodemon app.js && grunt:watch && sass --watch stylesheets:public/css",
+    "start:production": "NODE_ENV=production nodemon app.js",
+    "build": "grunt"
+  }
+}

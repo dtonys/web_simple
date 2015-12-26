@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <title> Web Minimal </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS -->
+    <% if( process.env.NODE_ENV === 'production' ){ %>
+      <!-- layout -->
+      <link rel="stylesheet" href="/build/layout.min.css" >
+      <!-- page -->
+      <% if( assets.css_min ){ %>
+        <link rel="stylesheet" href="<%= assets.css_min %>" >
+      <% } %>
+    <% } else { %>
+      <script src="//localhost:35729/livereload.js"></script>
+      <!-- layout -->
+      <link rel="stylesheet" href="/css/normalize.css" >
+      <link rel="stylesheet" href="/css/layout.css" >
+      <!-- page -->
+      <% assets.css.forEach( function( item ){ %>
+        <link rel="stylesheet" href="<%= item %>" >
+      <% }) %>
+    <% } %>
+
+    <script>
+      // global namespace
+      window.WS = {};
+    </script>
+  </head>
+  <body>
+    Layout
+    <%- include(page_template) %>
+    <!-- JS -->
+    <% if( process.env.NODE_ENV === 'production' ){ %>
+      <!-- vendors -->
+      <script src="/build/vendors.min.js"></script>
+      <!-- layout -->
+      <script src="/build/layout.min.js"></script>
+      <!-- page -->
+      <% if( assets.js_min ){ %>
+        <script src="<%= assets.js_min %>"></script>
+      <% } %>
+
+    <% } else { %>
+      <!-- vendors -->
+      <script src="/js/jquery-2.1.4.min.js"></script>
+      <script src="/js/lodash.min.js"></script>
+      <!-- layout -->
+      <script src="/js/compiled_templates.js"></script>
+      <script src="/js/layout.js"></script>
+      <!-- page -->
+      <% assets.js.forEach( function( item ){ %>
+        <script src="<%= item %>"></script>
+      <% }) %>
+
+    <% } %>
+
+  </body>
+</html>
+

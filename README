@@ -1,6 +1,19 @@
-Foundation for framework free web project, using simple tools.
+Foundation for framework-free web project, using simple tools.
 
-jQuery, Underscore
+Standard Multi-Page, server rendered app.
+
+jQuery, Lodash, Lodash Templates
 SASS
 Grunt
 Express
+
+1.) start server
+npm run start
+
+
+2.) livereload css + recompile templates:
+grunt watch
+
+
+3.) compile sass to css:
+sass --watch stylesheets:public/css
