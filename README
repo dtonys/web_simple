@@ -1,4 +1,6 @@
-basic setup for a web page
+Foundation for framework free web project, using simple tools.
 
-npm install http-server -g
-http-server public
+jQuery, Underscore
+SASS
+Grunt
+Express
