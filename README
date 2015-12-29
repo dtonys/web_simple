@@ -8,12 +8,12 @@ Grunt
 Express
 
 1.) start server
-npm run start
+/> npm run start
 
 
 2.) livereload css + recompile templates:
-grunt watch
+/> grunt watch
 
 
 3.) compile sass to css:
-sass --watch stylesheets:public/css
+/> sass --watch stylesheets:public/css
