@@ -38,7 +38,8 @@
   },
   "homepage": "https://github.com/dtonys/web_simple#readme",
   "scripts": {
-    "start": "nodemon app.js && grunt:watch && sass --watch stylesheets:public/css",
+    "start": "nodemon app.js & grunt watch & sass --watch stylesheets:public/css",
+    "stop": "pgrep -f 'nodemon app.js' | xargs kill && pgrep -f 'grunt watch' | xargs kill && pgrep -f 'sass --watch' | xargs kill",
     "start:production": "NODE_ENV=production nodemon app.js",
     "build": "grunt"
   }

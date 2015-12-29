@@ -40,13 +40,6 @@ exports.page2 = function( req, res ){
   });
 };
 
-exports.page3 = function( req, res ){
-  return res.render('layout', {
-    page_template: 'page2',
-    foo: "bar2"
-  });
-};
-
 exports._404 = function( req, res ){
   console.log( req.originalUrl );
 

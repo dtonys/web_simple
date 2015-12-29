@@ -24,8 +24,8 @@ module.exports = function(grunt) {
         files: {
           // vendors
           'public/build/vendors.min.js': [
-            'public/js/lodash.min.js',
-            'public/js/jquery-2.1.4.min.js'
+            'public/js/vendor/lodash.min.js',
+            'public/js/vendor/jquery-2.1.4.min.js'
           ],
           // layout
           'public/build/layout.min.js': [

@@ -2,18 +2,12 @@ Foundation for framework-free web project, using simple tools.
 
 Standard Multi-Page, server rendered app.
 
+## Tech
 jQuery, Lodash, Lodash Templates
 SASS
 Grunt
 Express
 
-1.) start server
+## Start
+start server, watch css + ejs templates
 > npm run start
-
-
-2.) livereload css + recompile templates:
-> grunt watch
-
-
-3.) compile sass to css:
-> sass --watch stylesheets:public/css
