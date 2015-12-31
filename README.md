@@ -17,6 +17,10 @@ Foundation for non single page web site, using simple, reliable tools.
 start server, watch sass & livereload css, watch ejs templates
 > npm run start
 
+## Start
+stop all running tasks
+> npm run stop
+
 ## Frontend
 Vendors are 3rd party js libraries
 Layout wraps the page
@@ -34,7 +38,7 @@ CSS:
 * Page    - page_1.min.css
 
 ## Backend
-Follows standard, Rails-esque MVC.
+Follows standard MVC, such as that found in Ruby On Rails.
 
 Routes go in routes.js
   * Routes can route to a Page or an API
