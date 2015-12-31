@@ -1,17 +1,46 @@
-Foundation for framework-free web project, using simple tools.
+## Overview
+Foundation for non single page web site, using simple, reliable tools.
 
-Standard Multi-Page, server rendered app.
+## Goals
+* No front-end javascript frameworks
+* Support arbitrary number of pages and layouts
+* Client side templating for complex views
+* Simple
 
 ## Tech
-jQuery, Lodash, Lodash Templates
-
-SASS
-
-Grunt
-
-Express
-
+* JS:       jQuery, Lodash
+* CSS:      SASS
+* Assets:   Grunt
+* Backend:  Express
 
 ## Start
-start server, watch css + ejs templates
+start server, watch sass & livereload css, watch ejs templates
 > npm run start
+
+## Frontend
+Vendors are 3rd party js libraries
+Layout wraps the page
+Page has the content
+
+Multiple pages and layouts can be implemented.
+
+JS:
+* Vendors - vendors.min.js
+* Layout  - layout.min.js
+* Page    - page_1.min.js
+
+CSS:
+* Layout  - layout.min.css
+* Page    - page_1.min.css
+
+## Backend
+Follows standard, Rails-esque MVC.
+
+Routes go in routes.js
+  * Routes can route to a Page or an API
+  * Order of route matters
+  * Router sends request to controller
+
+Pages go in pagesController
+
+APIs go in apiController
