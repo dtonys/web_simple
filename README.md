@@ -23,7 +23,9 @@ stop all running tasks
 
 ## Frontend
 Vendors are 3rd party js libraries
+
 Layout wraps the page
+
 Page has the content
 
 Multiple pages and layouts can be implemented.
