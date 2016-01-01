@@ -17,7 +17,7 @@ Foundation for non single page web site, using simple, reliable tools.
 start server, watch sass & livereload css, watch ejs templates
 > npm run start
 
-## Start
+## Stop
 stop all running tasks
 > npm run stop
 
