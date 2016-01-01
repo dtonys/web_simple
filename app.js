@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'production'){
   server.use(morgan('common'));                                    // log requests
 }
 
-// api
+// route file
 require('./app/routes.js')(server);
 
 // start server
