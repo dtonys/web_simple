@@ -33,6 +33,14 @@ server.set('view engine', 'ejs');                             // set template en
 server.set('views', __dirname + '/app/views');                    // set views dir
 server.set('view cache', true);
 
+// setup lodash templates
+var templates = require('./app/templates.js')({
+  path: 'public/templates/',
+  ext: '.tmpl.html'
+});
+// expose templates to global scope, allows templates to be used within templates
+global.templates = templates;
+
 // env specific middleware
 if (process.env.NODE_ENV === 'development'){
   server.use(morgan('dev'));                                    // log requests
