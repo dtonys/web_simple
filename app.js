@@ -28,9 +28,9 @@ server.use(methodOverride());                                 // allow PUT and D
 server.use(cookieParser());                                   // populate req.cookies
 
 // setup views
-server.engine('ejs', cons.ejs);                               // match view engine to file extension
+require('lodash-express')(server, 'ejs');
 server.set('view engine', 'ejs');                             // set template engine
-server.set('views', __dirname + '/app/views');                    // set views dir
+server.set('views', __dirname + '/app/views');                // set views dir
 server.set('view cache', true);
 
 // setup lodash templates
