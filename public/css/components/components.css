@@ -1,0 +1,166 @@
+.style-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px; }
+
+.container {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #999; }
+
+.arrow {
+  display: inline-block;
+  vertical-align: top; }
+  .arrow.up {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid black; }
+  .arrow.right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid black;
+    border-bottom: 25px solid transparent; }
+  .arrow.down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid black; }
+  .arrow.left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid black;
+    border-bottom: 25px solid transparent; }
+
+.border-arrow.up {
+  position: relative; }
+  .border-arrow.up:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.up:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    left: 50%;
+    margin-left: -5px;
+    top: -10px; }
+.border-arrow.right {
+  position: relative; }
+  .border-arrow.right:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.right:after {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid black;
+    border-bottom: 5px solid transparent;
+    top: 50%;
+    margin-top: -5px;
+    right: -10px; }
+.border-arrow.down {
+  position: relative; }
+  .border-arrow.down:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.down:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+    left: 50%;
+    margin-left: -5px;
+    bottom: -10px; }
+.border-arrow.left {
+  position: relative; }
+  .border-arrow.left:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.left:after {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid black;
+    border-bottom: 5px solid transparent;
+    top: 50%;
+    margin-top: -5px;
+    left: -10px; }
+.border-arrow.big.up {
+  position: relative; }
+  .border-arrow.big.up:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.big.up:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black;
+    left: 50%;
+    margin-left: -10px;
+    top: -20px; }
+.border-arrow.big.right {
+  position: relative; }
+  .border-arrow.big.right:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.big.right:after {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 10px solid transparent;
+    top: 50%;
+    margin-top: -10px;
+    right: -20px; }
+.border-arrow.big.down {
+  position: relative; }
+  .border-arrow.big.down:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.big.down:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid black;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -20px; }
+.border-arrow.big.left {
+  position: relative; }
+  .border-arrow.big.left:after {
+    content: "";
+    position: absolute; }
+  .border-arrow.big.left:after {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid black;
+    border-bottom: 10px solid transparent;
+    top: 50%;
+    margin-top: -10px;
+    left: -20px; }
+
+.border-arrow.up.offset:after {
+  margin-left: 20px; }
+
+table.table {
+  width: 100%; }
+  table.table td {
+    border: solid black 1px;
+    height: 50px;
+    vertical-align: middle;
+    padding: 20px 0; }
+
+/*# sourceMappingURL=components.css.map */

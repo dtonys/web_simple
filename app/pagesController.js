@@ -20,12 +20,21 @@ function generateAssetObj( name ){
   };
 };
 
+exports.home = function( req, res ){
+  var assets = generateAssetObj('home');
+  assets.css = ['/css/pages/home.css'];
+
+  return res.render('layout', {
+    page_template: 'home',
+    assets: assets
+  });
+};
+
 exports.page1 = function( req, res ){
   var assets = generateAssetObj('page_1');
 
   return res.render('layout', {
     page_template: 'page1',
-    foo: "bar1",
     assets: assets
   });
 };
@@ -35,7 +44,6 @@ exports.page2 = function( req, res ){
 
   return res.render('layout', {
     page_template: 'page2',
-    foo: "bar2",
     assets: assets
   });
 };

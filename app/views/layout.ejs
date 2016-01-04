@@ -24,8 +24,13 @@
     <% } else { %>
       <script src="//localhost:35729/livereload.js"></script>
       <!-- layout -->
-      <link rel="stylesheet" href="/css/normalize.css" >
-      <link rel="stylesheet" href="/css/layout.css" >
+      <link rel="stylesheet" href="/css/base/reset.css" >
+      <link rel="stylesheet" href="/css/base/default.css" >
+      <link rel="stylesheet" href="/css/components/components.css" >
+      <link rel="stylesheet" href="/css/components/forms.css" >
+      <link rel="stylesheet" href="/css/layout/layout.css" >
+      <link rel="stylesheet" href="/css/layout/layout_extend.css" >
+
       <!-- page -->
       <% assets.css.forEach( function( item ){ %>
         <link rel="stylesheet" href="<%= item %>" >
@@ -38,8 +43,100 @@
     </script>
   </head>
   <body>
-    Layout
-    <%= include(page_template) %>
+    <div class="top-bar black" >
+      <div class="margin-left-5 f-left" > &nbsp; </div>
+      <div class="nav-left f-left" >
+        <img class="logo" src="/img/yinyang.png" width="40" />
+      </div>
+      <div class="nav-mid" > Black and White </div>
+      <div class="nav-right f-right" ></div>
+    </div>
+    <div class="left-bar black" >
+      left bar
+    </div>
+    <div class="fixed-scroll-wrap" >
+      <div class="content-wrap clearfix">
+        <div class="_50_100 left">
+          <div class="bw-item">
+            <div class="head clearfix" >
+              <div class="left-80" > Width </div>
+              <div class="left-20 toggle-code" > &#x3C;/&#x3E; </div>
+            </div>
+            <div class="source-code">
+              <pre style="display: none;" ><code data-language="html">
+                What is diabetes?
+              </code></pre>
+            </div>
+            <div class="content clearfix" >
+              <div class="w-item left-50 black"> .left-50 </div>
+              <div class="w-item left-50 black"> .left-50 </div>
+
+              <div class="w-item left-25 black"> .left-25 </div>
+              <div class="w-item left-25 black"> .left-25 </div>
+              <div class="w-item right-25 black"> .right-25 </div>
+
+              <div class="w-item left-33 black"> .left-33 </div>
+              <div class="w-item left-33 black"> .left-33 </div>
+              <div class="w-item left-34 black"> .left-34 </div>
+
+              <div class="w-item right-20 black"> .right-20 </div>
+              <div class="w-item right-20 black"> .right-20 </div>
+              <div class="w-item right-20 black"> .right-20 </div>
+              <div class="w-item right-20 black"> .right-20 </div>
+            </div>
+          </div>
+        </div>
+        <div class="_50_100 right">
+          <div class="bw-item">
+            <div class="head" >
+              Form Inputs
+            </div>
+            <div class="content clearfix" >
+              <input class="input" type="text" placeholder=".input">
+              <div class="margin-bottom-10"></div>
+              <div class="btn"> .btn </div>
+              <div class="margin-bottom-10"></div>
+              <select class="select" name="name" >
+                <option value="1"> .select - option 1 </option>
+                <option value="2"> .select - option 2 </option>
+                <option value="3"> .select - option 3 </option>
+              </select>
+              <div class="margin-bottom-10"></div>
+              <textarea class="textarea" type="textarea" placeholder=".textarea"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="_50_100 left">
+          <div class="bw-item">
+            fixed-scroll-wrap<br><br>
+            fixed-scroll-wrap<br><br>
+          </div>
+        </div>
+        <div class="_50_100 right">
+          <div class="bw-item">
+            fixed-scroll-wrap<br><br>
+            fixed-scroll-wrap<br><br>
+          </div>
+        </div>
+      </div>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      fixed-scroll-wrap<br><br>
+      <%= include(page_template) %>
+    </div>
     <!-- JS -->
     <% if( process.env.NODE_ENV === 'production' ){ %>
       <!-- vendors -->

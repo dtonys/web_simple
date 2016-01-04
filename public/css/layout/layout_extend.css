@@ -1,0 +1,23 @@
+.top-bar {
+  padding: 10px 0;
+  font-size: 24px; }
+
+.title {
+  display: inline-block; }
+
+.logo {
+  border: solid white 2px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s; }
+
+.nav-left, .nav-mid, .nav-right {
+  display: inline-block; }
+
+.left-bar {
+  transition: width 0.2s;
+  width: 0px; }
+  .left-bar.open {
+    width: 200px; }
+
+/*# sourceMappingURL=layout_extend.css.map */

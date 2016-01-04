@@ -1,0 +1,62 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+body{
+  background: white;
+}
+
+.content-wrap{
+  padding: 10px;
+}
+
+._50_100{
+  float: left;
+  width: 50%;
+  padding-bottom: 10px;
+  &.left{
+    padding-right: 5px;
+  }
+  &.right{
+    padding-left: 5px;
+  }
+}
+
+.bw-item{
+  border: solid black 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  .head{
+    border-bottom: solid black 2px;
+    font-size: 18px;
+    .left-80, .left-20{
+      padding: 10px;
+    }
+  }
+  .content{
+    background: #eee;
+    padding: 10px;
+  }
+  .w-item{
+    border: solid white 2px;
+  }
+  .toggle-code{
+    cursor: pointer;
+    border-left: solid black 2px;
+    &:hover{
+      background: #eee;
+    }
+    &:active{
+      background: #ddd;
+    }
+  }
+}
+
+@media #{$mobile_tablet} {
+  ._50_100{
+    width: 100%;
+    &.left, &.right{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

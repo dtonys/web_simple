@@ -1,0 +1,176 @@
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 20px;
+  font-size: 14px;
+  outline: none;
+  user-select: none;
+  border: solid black 1px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #999 inset; }
+  .input::-webkit-input-placeholder {
+    color: black;
+    font-weight: 400; }
+  .input:-moz-placeholder {
+    color: black;
+    font-weight: 400; }
+  .input::-moz-placeholder {
+    color: black;
+    font-weight: 400; }
+  .input:-ms-input-placeholder {
+    color: black;
+    font-weight: 400; }
+  .input:focus {
+    box-shadow: 0px 0px 4px #000 inset; }
+  .input.error {
+    border: solid red 1px;
+    box-shadow: 0px 0px 4px red inset; }
+    .input.error:focus {
+      box-shadow: 0px 0px 4px red inset; }
+
+.btn {
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  background: white;
+  color: black;
+  border: 0;
+  border: solid black 1px;
+  border-radius: 5px;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -moz-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 0px 4px #999;
+  transition: background 0.1s; }
+  .btn:hover {
+    box-shadow: 0px 0px 4px #000; }
+  .btn:active {
+    background: #EEE;
+    transition: transform 0s; }
+
+.select {
+  height: 40px;
+  width: 100%;
+  padding: 8px 20px 10px 10px;
+  background: white;
+  color: black;
+  border: 0;
+  border: solid black 1px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #999;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -moz-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-image: url("/img/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: 93% center;
+  background-size: 10px; }
+
+.textarea {
+  width: 100%;
+  outline: none;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  resize: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  box-shadow: 0px 0px 4px #999 inset; }
+  .textarea::-webkit-input-placeholder {
+    color: black;
+    font-weight: 400; }
+  .textarea:-moz-placeholder {
+    color: black;
+    font-weight: 400; }
+  .textarea::-moz-placeholder {
+    color: black;
+    font-weight: 400; }
+  .textarea:-ms-input-placeholder {
+    color: black;
+    font-weight: 400; }
+  .textarea:focus {
+    box-shadow: 0px 0px 4px #000 inset; }
+
+.checkbox {
+  display: none; }
+
+.radio {
+  display: none; }
+
+.checked-box, .unchecked-box, .checked-radio, .unchecked-radio {
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  border: solid black 1px; }
+
+.unchecked-box, .unchecked-radio {
+  background: white; }
+
+.checked-box, .checked-radio {
+  background: black; }
+
+.unchecked-box, .checked-box {
+  border-radius: 2px; }
+
+.unchecked-radio, .checked-radio {
+  border-radius: 10px; }
+
+.label {
+  cursor: pointer;
+  padding: 10px;
+  line-height: 20px; }
+
+input.checkbox {
+  cursor: pointer; }
+
+input.checkbox + label .checked-box {
+  display: none; }
+input.checkbox + label .unchecked-box {
+  display: inline-block; }
+
+input.checkbox:checked + label .checked-box {
+  display: inline-block; }
+input.checkbox:checked + label .unchecked-box {
+  display: none; }
+
+input.radio {
+  cursor: pointer; }
+
+input.radio + label .checked-radio {
+  display: none; }
+input.radio + label .unchecked-radio {
+  display: inline-block; }
+
+input.radio:checked + label .checked-radio {
+  display: inline-block; }
+input.radio:checked + label .unchecked-radio {
+  display: none; }
+
+/*# sourceMappingURL=forms.css.map */
