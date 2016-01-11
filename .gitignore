@@ -1,2 +1,5 @@
+npm-debug.log
+.sass-cache/
 public/build
+public/css/
 node_modules

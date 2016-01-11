@@ -1,32 +1,27 @@
 var path = require('path');
+var asset_map = require('./assets.js').page_assets();
 
 exports.renderPage = function( req, res ){
   return res.render('layout', {
-    page_template: 'test',
+    page: 'test',
     foo: "bar1"
   });
 };
 
-function generateAssetObj( name ){
-  return {
-    js: [
-      '/js/'+name+'.js'
-    ],
-    js_min: '/build/'+name+'.min.js',
-    css: [
-      '/css/'+name+'.css'
-    ],
-    css_min: 'build/'+name+'.min.css'
-  };
+function _render( layout, page, args ){
+  return res.render('layout', {
+    page: 'page1',
+    foo: "bar1",
+    assets: assets
+  });
 };
 
 exports.page1 = function( req, res ){
-  var assets = generateAssetObj('page_1');
 
   return res.render('layout', {
-    page_template: 'page1',
-    foo: "bar1",
-    assets: assets
+    page: 'page1',
+    core: 'core',
+    layout: 'layout'
   });
 };
 
@@ -34,7 +29,7 @@ exports.page2 = function( req, res ){
   var assets = generateAssetObj('page_2');
 
   return res.render('layout', {
-    page_template: 'page2',
+    page: 'page2',
     foo: "bar2",
     assets: assets
   });

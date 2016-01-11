@@ -1,0 +1,21 @@
+<% if( process.env.NODE_ENV === 'production' ){ %>
+  <!-- core -->
+  <script src="<%= assets[core].js_min %>"></script>
+  <!-- layout -->
+  <script src="<%= assets[layout].js_min %>"></script>
+  <!-- page -->
+  <script src="<%= assets[page].js_min %>"></script>
+<% } else { %>
+  <!-- core -->
+  <% assets[core].js.forEach( function( item ){ %>
+    <script src="<%= item %>"></script>
+  <% }) %>
+  <!-- layout -->
+  <% assets[layout].js.forEach( function( item ){ %>
+    <script src="<%= item %>"></script>
+  <% }) %>
+  <!-- page -->
+  <% assets[page].js.forEach( function( item ){ %>
+    <script src="<%= item %>"></script>
+  <% }) %>
+<% } %>

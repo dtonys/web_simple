@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAI;EACF,UAAU,EAAE,IAAI",
-"sources": ["../../stylesheets/page_1.scss"],
-"names": [],
-"file": "page_1.css"
-}

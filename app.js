@@ -28,7 +28,6 @@ server.use(methodOverride());                                 // allow PUT and D
 server.use(cookieParser());                                   // populate req.cookies
 
 // setup views
-require('lodash-express')(server, 'ejs');
 server.set('view engine', 'ejs');                             // set template engine
 server.set('views', __dirname + '/app/views');                // set views dir
 server.set('view cache', true);
@@ -38,8 +37,18 @@ var templates = require('./app/templates.js')({
   path: 'public/templates/',
   ext: '.tmpl.html'
 });
-// expose templates to global scope, allows templates to be used within templates
+
+// expose templates to global, allows lodash templates to work
 global.templates = templates;
+// expose assets to views
+server.locals.assets = require('./app/assets.js').page_assets();
+
+// expose req obj to views
+server.use( function( req, res, next ){
+  res.locals.req = req;
+  res.locals.templates = templates;
+  next();
+});
 
 // env specific middleware
 if (process.env.NODE_ENV === 'development'){

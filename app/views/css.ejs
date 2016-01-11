@@ -1,0 +1,22 @@
+<% if( process.env.NODE_ENV === 'production' ){ %>
+  <!-- core -->
+  <link rel="stylesheet" href="<%= assets[core].css_min %>" >
+  <!-- layout -->
+  <link rel="stylesheet" href="<%= assets[layout].css_min %>" >
+  <!-- page -->
+  <link rel="stylesheet" href="<%= assets[page].css_min %>" >
+<% } else { %>
+  <script src="//localhost:35729/livereload.js"></script>
+  <!-- core -->
+  <% assets[core].css.forEach( function( item ){ %>
+    <link rel="stylesheet" href="<%= item %>" >
+  <% }) %>
+  <!-- layout -->
+  <% assets[layout].css.forEach( function( item ){ %>
+    <link rel="stylesheet" href="<%= item %>" >
+  <% }) %>
+  <!-- page -->
+  <% assets[page].css.forEach( function( item ){ %>
+    <link rel="stylesheet" href="<%= item %>" >
+  <% }) %>
+<% } %>

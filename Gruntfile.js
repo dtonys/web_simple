@@ -1,3 +1,4 @@
+var assets = require('./app/assets.js').grunt_assets();
 
 module.exports = function(grunt) {
 
@@ -21,25 +22,7 @@ module.exports = function(grunt) {
     // uglify
     uglify: {
       my_target: {
-        files: {
-          // vendors
-          'public/build/vendors.min.js': [
-            'public/js/vendor/lodash.min.js',
-            'public/js/vendor/jquery-2.1.4.min.js'
-          ],
-          // layout
-          'public/build/layout.min.js': [
-            'public/js/compiled_templates.js',
-            'public/js/layout.js'
-          ],
-          // pages
-          'public/build/page_1.min.js': [
-            'public/js/page_1.js'
-          ],
-          'public/build/page_2.min.js': [
-            'public/js/page_2.js'
-          ]
-        }
+        files: assets.js_map
       }
     },
 
@@ -60,20 +43,7 @@ module.exports = function(grunt) {
     // minify css
     cssmin: {
       combine: {
-        files: {
-          // layout
-          'public/build/layout.min.css': [
-            'public/css/normalize.css',
-            'public/css/layout.css'
-          ],
-          // pages
-          'public/build/page_1.min.css': [
-            'public/css/page_1.css'
-          ],
-          'public/build/page_2.min.css': [
-            'public/css/page_2.css'
-          ]
-        }
+        files: assets.css_map
       }
     },
 
