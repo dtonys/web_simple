@@ -38,6 +38,12 @@ var asset_map = {
     css: [
       '/css/page2.css'
     ]
+  },
+  flexbox: {
+    js: [],
+    css: [
+      '/css/page3.css'
+    ]
   }
 };
 
