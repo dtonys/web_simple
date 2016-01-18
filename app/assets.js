@@ -42,7 +42,7 @@ var asset_map = {
   flexbox: {
     js: [],
     css: [
-      '/css/page3.css'
+      '/css/flexbox.css'
     ]
   }
 };
