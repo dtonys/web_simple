@@ -1,0 +1,29 @@
+// flexbox.scss
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  background: grey;
+  min-height: 200px;
+}
+
+.nav, .item, .footer {
+  flex: 1;
+  color: white;
+  border: solid black 1px;
+}
+
+.nav{
+  flex: 1 0 100%;
+  background: red;
+  width: 100%;
+}
+
+.footer{
+  flex: 1 0 100%;
+  background: orange;
+}
+
+.item {
+  background: blue;
+  text-align: center;
+}

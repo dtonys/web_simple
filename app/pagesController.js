@@ -27,12 +27,19 @@ exports.page1 = function( req, res ){
 };
 
 exports.page2 = function( req, res ){
-  var assets = generateAssetObj('page_2');
 
   return res.render('layout', {
     page: 'page2',
-    foo: "bar2",
-    assets: assets
+    core: 'core',
+    layout: 'layout'
+  });
+};
+
+exports.flexbox = function( req, res ){
+  return res.render('layout', {
+    page: 'flexbox',
+    core: 'core',
+    layout: 'layout'
   });
 };
 
