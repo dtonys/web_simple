@@ -3,16 +3,17 @@ var asset_map = require('./assets.js').page_assets();
 
 exports.renderPage = function( req, res ){
   return res.render('layout', {
-    page: 'test',
-    foo: "bar1"
+    page: 'page1',
+    core: 'core',
+    layout: 'layout'
   });
 };
 
 function _render( layout, page, args ){
   return res.render('layout', {
     page: 'page1',
-    foo: "bar1",
-    assets: assets
+    core: 'core',
+    layout: 'layout'
   });
 };
 
