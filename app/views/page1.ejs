@@ -1,4 +1,8 @@
 <div id="page_1" >
   Page 1
-  <%- templates['test']({}) %>
+  <div class="">Foo: <%= content.foo %></div>
+  <div class="">Bar: <%= content.bar %></div>
+  <%- templates['test']({
+    displayString: content.foo
+  }) %>
 </div>

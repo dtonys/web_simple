@@ -22,7 +22,11 @@ exports.page1 = function( req, res ){
   return res.render('layout', {
     page: 'page1',
     core: 'core',
-    layout: 'layout'
+    layout: 'layout',
+    content: {
+      foo: 'foo',
+      bar: 'bar',
+    }
   });
 };
 

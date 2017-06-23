@@ -46,7 +46,6 @@ server.locals.assets = require('./app/assets.js').page_assets();
 // expose req obj to views
 server.use( function( req, res, next ){
   res.locals.req = req;
-  res.locals.templates = templates;
   next();
 });
 
