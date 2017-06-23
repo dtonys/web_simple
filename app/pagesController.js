@@ -5,7 +5,11 @@ exports.renderPage = function( req, res ){
   return res.render('layout', {
     page: 'page1',
     core: 'core',
-    layout: 'layout'
+    layout: 'layout',
+    content: {
+      foo: 'foo1',
+      bar: 'bar'
+    }
   });
 };
 
@@ -24,8 +28,8 @@ exports.page1 = function( req, res ){
     core: 'core',
     layout: 'layout',
     content: {
-      foo: 'foo',
-      bar: 'bar',
+      foo: 'foo2',
+      bar: 'bar'
     }
   });
 };

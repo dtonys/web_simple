@@ -2,7 +2,9 @@
   Page 1
   <div class="">Foo: <%= content.foo %></div>
   <div class="">Bar: <%= content.bar %></div>
-  <%- templates['test']({
-    displayString: content.foo
-  }) %>
+  <% if( content ){ %>
+    <%- templates['test']({
+      displayString: content.foo
+    }) %>
+  <% } %>
 </div>
